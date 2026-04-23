@@ -2,6 +2,6 @@
    "shooters":   ["shooter1.txt", "shooter2.txt"],
    "generators": ["generator1.txt"],
    "enemies":    ["enemy1.txt"],
-   "waves":      ["wave.txt", "wave1.txt", "wave2.txt"],
+   "waves":      ["wave.txt", "wave1.txt"],
    "river":      "river.txt"
 }
