@@ -1,6 +1,6 @@
 <Wave>
 
-    <Wave_Number> 1 </Wave_Number>
+    <Wave_Number> 3 </Wave_Number>
 
     <Spawn_Group>
         <Enemy_Type> enemy1 </Enemy_Type>

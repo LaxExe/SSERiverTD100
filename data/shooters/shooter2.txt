@@ -1,14 +1,14 @@
 <Shooter>
 
-    <n> ShooterNameHere </n>
+    <n> SuperSniper </n>
     <Image> shooter_image_filename.png </Image>
 
-    <Cost> 100 </Cost>
+    <Cost> 10 </Cost>
 
-    <Base_Damage> 1 </Base_Damage>
-    <Base_Fire_Rate> 3 </Base_Fire_Rate>
+    <Base_Damage> 100 </Base_Damage>
+    <Base_Fire_Rate> 1 </Base_Fire_Rate>
     <Base_Projectile_Speed> 10 </Base_Projectile_Speed>
-    <Range> 3 </Range>
+    <Range> 8 </Range>
 
     <Upgrade_Costs>
         <Level_1> 0 </Level_1>
@@ -17,9 +17,9 @@
         <Level_4> 250 </Level_4>
     </Upgrade_Costs>
 
-    <Splash_Radius> 0 </Splash_Radius>
+    <Splash_Radius> 2 </Splash_Radius>
 
-    <Slow_Factor> 0.5 </Slow_Factor>
+    <Slow_Factor> 0 </Slow_Factor>
     <Slow_Duration> 1 </Slow_Duration>
   
 

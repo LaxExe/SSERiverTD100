@@ -1,20 +1,3 @@
-/**
- * RIVER DEFENSE — game.js
- * Features:
- *  · Projectiles drawn using shooter's own PNG (rotated toward target)
- *  · Splash damage  — <Splash_Radius> grid units, 0 = single target
- *  · Slow effect    — <Slow_Factor> (0–1 speed multiplier) + <Slow_Duration> seconds
- *  · Splash/slow VFX ripple animations on canvas
- *
- * Shooter .txt new optional tags:
- *   <Splash_Radius>   0.8  </Splash_Radius>      -- grid units; 0 or absent = no splash
- *   <Slow_Factor>     0.4  </Slow_Factor>         -- speed multiplier while slowed (0.4 = 40% speed)
- *   <Slow_Duration>   2.0  </Slow_Duration>       -- seconds slow lasts
- *
- * Both tags are optional on ANY shooter. Splash and slow stack independently.
- * Splash_Radius also controls splash ring VFX size.
- */
-
 'use strict';
 
 // ─────────────────────────────────────────────
