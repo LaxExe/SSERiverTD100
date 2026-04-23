@@ -1,0 +1,11 @@
+<Wave>
+
+    <Wave_Number> 1 </Wave_Number>
+
+    <Spawn_Group>
+        <Enemy_Type> enemy1 </Enemy_Type>
+        <Count> 5 </Count>
+    </Spawn_Group>
+
+
+</Wave>

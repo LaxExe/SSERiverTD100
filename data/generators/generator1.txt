@@ -1,0 +1,26 @@
+<Generator>
+
+    <n> GeneratorNameHere </n>
+    <Image> generator_image_filename.png </Image>
+
+    <Cost> 75 </Cost>
+
+    <Base_Income> 5 </Base_Income>
+
+    <Upgrade_Costs>
+        <Level_1> 0 </Level_1>
+        <Level_2> 40 </Level_2>
+        <Level_3> 100 </Level_3>
+        <Level_4> 200 </Level_4>
+    </Upgrade_Costs>
+
+    <Level_Multipliers>
+        <Level_1> 1.0 </Level_1>
+        <Level_2> 1.5 </Level_2>
+        <Level_3> 2.0 </Level_3>
+        <Level_4> 3.0 </Level_4>
+    </Level_Multipliers>
+
+    <Description> Short flavour text about this generator. </Description>
+
+</Generator>

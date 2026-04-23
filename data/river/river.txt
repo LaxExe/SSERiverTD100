@@ -1,0 +1,3 @@
+<River>
+    <Max_Health> 100 </Max_Health>
+</River>
