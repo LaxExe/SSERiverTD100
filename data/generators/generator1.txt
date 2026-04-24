@@ -1,6 +1,6 @@
 <Generator>
 
-    <n> GeneratorNameHere </n>
+    <n> Tree </n>
     <Image> generator_image_filename1.png </Image>
 
     <Cost> 75 </Cost>
