@@ -5,9 +5,11 @@
     <Spawn_Group>
         <Enemy_Type> enemy1 </Enemy_Type>
         <Count> 10 </Count>
-
+    </Spawn_Group>
+    
+    <Spawn_Group>
         <Enemy_Type> enemy2 </Enemy_Type>
-        <Count> 10 </Count>
+        <Count> 5 </Count>
     </Spawn_Group>
 
 </Wave>
