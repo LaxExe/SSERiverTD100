@@ -1,0 +1,18 @@
+<Enemy>
+
+    <n>enemy2</n>
+    <Image> enemy_image_filename.png </Image>
+
+    <Max_Health> 56 </Max_Health>
+    <Speed> 1.5 </Speed>
+    <Hitbox_Radius> 12 </Hitbox_Radius>
+
+    <Reward> 40 </Reward>
+    <River_Damage> 20 </River_Damage>
+
+    <Health_Bar_Width> 32 </Health_Bar_Width>
+    <Health_Bar_Height> 4 </Health_Bar_Height>
+
+    <Description> Short flavour text about this enemy. </Description>
+
+</Enemy>
