@@ -12,9 +12,9 @@
 
     <Upgrade_Costs>
         <Level_1> 0 </Level_1>
-        <Level_2> 50 </Level_2>
-        <Level_3> 100 </Level_3>
-        <Level_4> 200 </Level_4>
+        <Level_2> 4 </Level_2>
+        <Level_3> 16  </Level_3>
+        <Level_4> 64 </Level_4>
     </Upgrade_Costs>
 
     <Splash_Radius> 0 </Splash_Radius>

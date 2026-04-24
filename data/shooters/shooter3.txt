@@ -1,23 +1,23 @@
 <Shooter>
 
-    <n> Rifle </n>
+    <n> Sniper </n>
     <Image> shooter_image_filename.png </Image>
 
-    <Cost> 125 </Cost>
+    <Cost> 250 </Cost>
 
-    <Base_Damage> 20 </Base_Damage>
-    <Base_Fire_Rate> 1 </Base_Fire_Rate>
+    <Base_Damage> 40 </Base_Damage>
+    <Base_Fire_Rate> 0.5 </Base_Fire_Rate>
     <Base_Projectile_Speed> 10 </Base_Projectile_Speed>
-    <Range> 4 </Range>
+    <Range> 8 </Range>
 
     <Upgrade_Costs>
         <Level_1> 0 </Level_1>
-        <Level_2> 20 </Level_2>
-        <Level_3> 200 </Level_3>
-        <Level_4> 400 </Level_4>
+        <Level_2> 300 </Level_2>
+        <Level_3> 600 </Level_3>
+        <Level_4> 900 </Level_4>
     </Upgrade_Costs>
 
-    <Splash_Radius> 1 </Splash_Radius>
+    <Splash_Radius> 5 </Splash_Radius>
 
     <Slow_Factor> 0 </Slow_Factor>
     <Slow_Duration> 0 </Slow_Duration>
