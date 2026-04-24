@@ -1,9 +1,9 @@
 <Shooter>
 
-    <n> SuperSniper </n>
+    <n> Rifle </n>
     <Image> shooter_image_filename.png </Image>
 
-    <Cost> 200 </Cost>
+    <Cost> 250 </Cost>
 
     <Base_Damage> 100 </Base_Damage>
     <Base_Fire_Rate> 1 </Base_Fire_Rate>

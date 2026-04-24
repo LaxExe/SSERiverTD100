@@ -3,7 +3,7 @@
     <n>enemy1</n>
     <Image> enemy_image_filename.png </Image>
 
-    <Max_Health> 50 </Max_Health>
+    <Max_Health> 28 </Max_Health>
     <Speed> 1.5 </Speed>
     <Hitbox_Radius> 12 </Hitbox_Radius>
 

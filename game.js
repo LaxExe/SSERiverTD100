@@ -218,7 +218,7 @@ function initGame() {
     grid, waypoints: pixWP, segLengths, totalPathLen: totalLen, baseRow,
     riverMaxHP:      Registry.river.maxHealth,
     riverHP:         Registry.river.maxHealth,
-    bank:            150,
+    bank:            100,
     waveIndex:      -1,
     enemiesDefeated: 0,
     enemies:         [],

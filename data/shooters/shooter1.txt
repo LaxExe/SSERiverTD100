@@ -1,26 +1,26 @@
 <Shooter>
 
-    <n> ShooterNameHere </n>
+    <n> Standard </n>
     <Image> shooter_image_filename.png </Image>
 
-    <Cost> 50 </Cost>
+    <Cost> 25 </Cost>
 
-    <Base_Damage> 1 </Base_Damage>
-    <Base_Fire_Rate> 3 </Base_Fire_Rate>
+    <Base_Damage> 4 </Base_Damage>
+    <Base_Fire_Rate> 2 </Base_Fire_Rate>
     <Base_Projectile_Speed> 10 </Base_Projectile_Speed>
     <Range> 3 </Range>
 
     <Upgrade_Costs>
         <Level_1> 0 </Level_1>
         <Level_2> 50 </Level_2>
-        <Level_3> 120 </Level_3>
-        <Level_4> 250 </Level_4>
+        <Level_3> 100 </Level_3>
+        <Level_4> 200 </Level_4>
     </Upgrade_Costs>
 
     <Splash_Radius> 0 </Splash_Radius>
 
-    <Slow_Factor> 0.5 </Slow_Factor>
-    <Slow_Duration> 1 </Slow_Duration>
+    <Slow_Factor> 0 </Slow_Factor>
+    <Slow_Duration> 0 </Slow_Duration>
   
 
     <Level_Multipliers>
@@ -33,6 +33,6 @@
     <Projectile_Hit_Radius> 8 </Projectile_Hit_Radius>
     <Projectile_Image> projectile_image_filename.png </Projectile_Image>
 
-    <Description> Short flavour text about this shooter. </Description>
+    <Description> Basic Shooter </Description>
 
 </Shooter>
