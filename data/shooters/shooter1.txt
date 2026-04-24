@@ -3,7 +3,7 @@
     <n> ShooterNameHere </n>
     <Image> shooter_image_filename.png </Image>
 
-    <Cost> 100 </Cost>
+    <Cost> 5 </Cost>
 
     <Base_Damage> 1 </Base_Damage>
     <Base_Fire_Rate> 3 </Base_Fire_Rate>
