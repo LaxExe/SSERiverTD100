@@ -1,7 +1,7 @@
 <Shooter>
 
     <n> Standard </n>
-    <Image> shooter_image_filename.png </Image>
+    <Image> shooter_image_filename1.png </Image>
 
     <Cost> 25 </Cost>
 
