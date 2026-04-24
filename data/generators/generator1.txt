@@ -1,7 +1,7 @@
 <Generator>
 
     <n> GeneratorNameHere </n>
-    <Image> generator_image_filename.png </Image>
+    <Image> generator_image_filename1.png </Image>
 
     <Cost> 75 </Cost>
 
