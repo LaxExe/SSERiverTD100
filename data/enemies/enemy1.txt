@@ -1,7 +1,7 @@
 <Enemy>
 
     <n>enemy1</n>
-    <Image> enemy_image_filename.png </Image>
+    <Image> enemy_image_filename1.png </Image>
 
     <Max_Health> 28 </Max_Health>
     <Speed> 1.5 </Speed>
