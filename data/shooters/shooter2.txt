@@ -17,7 +17,7 @@
         <Level_4> 400 </Level_4>
     </Upgrade_Costs>
 
-    <Splash_Radius> 1 </Splash_Radius>
+    <Splash_Radius> 3 </Splash_Radius>
 
     <Slow_Factor> 0 </Slow_Factor>
     <Slow_Duration> 0 </Slow_Duration>

@@ -1,6 +1,6 @@
 <Shooter>
 
-    <n> garbage Truck </n>
+    <n> Recycling Collection </n>
     <Image> Truck.png </Image>
 
     <Cost> 50 </Cost>
@@ -17,7 +17,7 @@
         <Level_4> 900 </Level_4>
     </Upgrade_Costs>
 
-    <Splash_Radius> 5 </Splash_Radius>
+    <Splash_Radius> 1 </Splash_Radius>
 
     <Slow_Factor> 0 </Slow_Factor>
     <Slow_Duration> 0 </Slow_Duration>
