@@ -8,7 +8,7 @@
     <Base_Damage> 40 </Base_Damage>
     <Base_Fire_Rate> 0.5 </Base_Fire_Rate>
     <Base_Projectile_Speed> 10 </Base_Projectile_Speed>
-    <Range> 10 </Range>
+    <Range> 8 </Range>
 
     <Upgrade_Costs>
         <Level_1> 0 </Level_1>
@@ -31,7 +31,7 @@
     </Level_Multipliers>
 
     <Projectile_Hit_Radius> 10 </Projectile_Hit_Radius>
-    <Projectile_Image> cleanupbullet.png </Projectile_Image>
+    <Projectile_Image> recycling_bin.png </Projectile_Image>
 
     <Description> Short flavour text about this shooter. </Description>
 

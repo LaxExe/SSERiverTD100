@@ -1,6 +1,6 @@
 <Generator>
 
-    <n> Recylceing Factory </n>
+    <n> Recylcing Factory </n>
     <Image> factory.png </Image>
 
     <Cost> 75 </Cost>
