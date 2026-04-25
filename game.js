@@ -1091,7 +1091,7 @@ function gameLoop(ts) {
     }
   } else if (G.state === STATE.IDLE || G.state === STATE.WAVE_COMPLETE) {
     updateVFX(dt);
-    updateIncome(dt);
+    // updateIncome(dt); <-- HUGE BUG
   }
 
   if (G.state !== STATE.WIN && G.state !== STATE.LOSE) updateUI();
