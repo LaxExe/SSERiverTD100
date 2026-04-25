@@ -1,0 +1,26 @@
+<Generator>
+
+    <n> Tree Planting </n>
+    <Image> tree.png </Image>
+
+    <Cost> 55 </Cost>
+
+    <Base_Income> 3 </Base_Income>
+
+    <Upgrade_Costs>
+        <Level_1> 0 </Level_1>
+        <Level_2> 18 </Level_2>
+        <Level_3> 60 </Level_3>
+        <Level_4> 150 </Level_4>
+    </Upgrade_Costs>
+
+    <Level_Multipliers>
+        <Level_1> 1.0 </Level_1>
+        <Level_2> 1.5 </Level_2>
+        <Level_3> 2.0 </Level_3>
+        <Level_4> 3.0 </Level_4>
+    </Level_Multipliers>
+
+    <Description> Short flavour text about this generator. </Description>
+
+</Generator>
