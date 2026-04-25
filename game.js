@@ -865,10 +865,10 @@ function makePaletteCard(def) {
 
   // Build tag badges
   let tagHTML = '';
-  if (def.type === 'shooter') {
+  /*if (def.type === 'shooter') {
     if (def.hasSplash) tagHTML += `<span class="card-tag splash">Area!</span>`;
     if (def.hasSlow)   tagHTML += `<span class="card-tag slow">Speed!</span>`;
-  }
+  }*/
 
   card.innerHTML = `
     <div class="card-img-wrap">
@@ -943,10 +943,10 @@ function refreshInfoPanel() {
 
   // ── Ability tags ──
   let tagHTML = '';
-  if (def.type === 'shooter') {
+  /*if (def.type === 'shooter') {
     if (def.hasSplash) tagHTML += `<span class="card-tag splash">💥 Splash</span>`;
     if (def.hasSlow)   tagHTML += `<span class="card-tag slow">Speed!</span>`;
-  }
+  }*/
   document.getElementById('sp-tags').innerHTML = tagHTML;
 
   // ── Description ──
