@@ -1,7 +1,7 @@
 <Shooter>
 
-    <n> Rifle </n>
-    <Image> shooter_image_filename1.png </Image>
+    <n> Drone Pickup </n>
+    <Image> drone.png </Image>
 
     <Cost> 125 </Cost>
 
@@ -31,7 +31,7 @@
     </Level_Multipliers>
 
     <Projectile_Hit_Radius> 8 </Projectile_Hit_Radius>
-    <Projectile_Image> projectile_image_filename.png </Projectile_Image>
+    <Projectile_Image> net.png </Projectile_Image>
 
     <Description> Short flavour text about this shooter. </Description>
 

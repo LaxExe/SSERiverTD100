@@ -1,7 +1,7 @@
 <Generator>
 
-    <n> Tree </n>
-    <Image> generator_image_filename1.png </Image>
+    <n> Recylceing Factory </n>
+    <Image> factory.png </Image>
 
     <Cost> 75 </Cost>
 

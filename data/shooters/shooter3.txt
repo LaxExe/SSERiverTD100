@@ -1,14 +1,14 @@
 <Shooter>
 
-    <n> Sniper </n>
-    <Image> shooter_image_filename1.png </Image>
+    <n> garbage Truck </n>
+    <Image> Truck.png </Image>
 
-    <Cost> 250 </Cost>
+    <Cost> 50 </Cost>
 
     <Base_Damage> 40 </Base_Damage>
     <Base_Fire_Rate> 0.5 </Base_Fire_Rate>
     <Base_Projectile_Speed> 10 </Base_Projectile_Speed>
-    <Range> 8 </Range>
+    <Range> 10 </Range>
 
     <Upgrade_Costs>
         <Level_1> 0 </Level_1>
@@ -30,8 +30,8 @@
         <Level_4> 2.5 </Level_4>
     </Level_Multipliers>
 
-    <Projectile_Hit_Radius> 8 </Projectile_Hit_Radius>
-    <Projectile_Image> projectile_image_filename.png </Projectile_Image>
+    <Projectile_Hit_Radius> 10 </Projectile_Hit_Radius>
+    <Projectile_Image> cleanupbullet.png </Projectile_Image>
 
     <Description> Short flavour text about this shooter. </Description>
 

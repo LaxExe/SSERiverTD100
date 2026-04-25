@@ -59,6 +59,7 @@ function parseShooterDef(text) {
     type: 'shooter',
     name:                tag(doc, 'n'),
     image:               tag(doc, 'Image'),
+    projectileImage:     tag(doc, 'Projectile_Image'),
     cost:                tagInt(doc, 'Cost'),
     baseDamage:          tagNum(doc, 'Base_Damage'),
     baseFireRate:        tagNum(doc, 'Base_Fire_Rate'),
@@ -258,8 +259,8 @@ function placeTower(def, row, col) {
     x: col * CELL + CELL / 2,
     y: row * CELL + CELL / 2,
     cooldown: 0,
-    // Shooter image used BOTH as tower sprite and as the projectile sprite
     img: def.image ? loadImg(`assets/${def.type}s/${def.image}`) : null,
+    projectileImg: def.projectileImage ? loadImg(`assets/projectiles/${def.projectileImage}`) : null,
   };
   computeTowerStats(tower);
   G.placedTowers.push(tower);
@@ -410,8 +411,8 @@ function updateShooters(dt) {
       hasSlow:     tower.def.hasSlow,
       slowFactor:  tower.def.slowFactor,
       slowDuration:tower.def.slowDuration,
-      // Visual — use the shooter's own image as the projectile sprite
-      img:         tower.img,
+      // Visual — use the projectile-specific image
+      img:         tower.projectileImg,
       dead:        false,
     });
   }
@@ -1119,15 +1120,52 @@ async function boot() {
     Registry.river = parseRiverDef(await fetchText(`data/river/${manifest.river}`));
 
     setLoadMsg('Loading shooters...');
+    const shooterImgPromises = [];
     for (const f of (manifest.shooters || [])) {
       const def = parseShooterDef(await fetchText(`data/shooters/${f}`));
       Registry.shooters[def.name] = def;
+      // Pre-load shooter image
+      if (def.image) {
+        const img = new Image();
+        img.src = `assets/shooters/${def.image}`;
+        ImgCache[`assets/shooters/${def.image}`] = img;
+        shooterImgPromises.push(new Promise(r => { img.onload = r; img.onerror = r; }));
+      }
+      // Pre-load projectile image
+      if (def.projectileImage) {
+        const img = new Image();
+        img.src = `assets/projectiles/${def.projectileImage}`;
+        ImgCache[`assets/projectiles/${def.projectileImage}`] = img;
+        shooterImgPromises.push(new Promise(r => { img.onload = r; img.onerror = r; }));
+      }
+    }
+    // Wait for shooter images to load
+    if (shooterImgPromises.length > 0) {
+      await Promise.race([
+        Promise.allSettled(shooterImgPromises),
+        new Promise(r => setTimeout(r, 2000))
+      ]).catch(() => {});
     }
 
     setLoadMsg('Loading generators...');
+    const generatorImgPromises = [];
     for (const f of (manifest.generators || [])) {
       const def = parseGeneratorDef(await fetchText(`data/generators/${f}`));
       Registry.generators[def.name] = def;
+      // Pre-load generator image
+      if (def.image) {
+        const img = new Image();
+        img.src = `assets/generators/${def.image}`;
+        ImgCache[`assets/generators/${def.image}`] = img;
+        generatorImgPromises.push(new Promise(r => { img.onload = r; img.onerror = r; }));
+      }
+    }
+    // Wait for generator images to load
+    if (generatorImgPromises.length > 0) {
+      await Promise.race([
+        Promise.allSettled(generatorImgPromises),
+        new Promise(r => setTimeout(r, 2000))
+      ]).catch(() => {});
     }
 
     setLoadMsg('Loading enemies...');

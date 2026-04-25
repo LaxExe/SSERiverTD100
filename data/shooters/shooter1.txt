@@ -1,7 +1,7 @@
 <Shooter>
 
-    <n> Pistol </n>
-    <Image> shooter_image_filename1.png </Image>
+    <n> CleanUp Crew </n>
+    <Image> cleaner.png </Image>
 
     <Cost> 25 </Cost>
 
@@ -19,7 +19,7 @@
 
     <Splash_Radius> 0 </Splash_Radius>
 
-    <Slow_Factor> 0 </Slow_Factor>
+    <Slow_Factor> 1.2 </Slow_Factor>
     <Slow_Duration> 0 </Slow_Duration>
   
 
@@ -31,8 +31,8 @@
     </Level_Multipliers>
 
     <Projectile_Hit_Radius> 8 </Projectile_Hit_Radius>
-    <Projectile_Image> projectile_image_filename.png </Projectile_Image>
+    <Projectile_Image> gloves.png </Projectile_Image> 
 
-    <Description> Basic Shooter </Description>
+    <Description> there needs to be a description for why this technology or thing protects the environment</Description>
 
 </Shooter>
