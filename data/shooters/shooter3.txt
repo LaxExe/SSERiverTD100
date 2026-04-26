@@ -3,9 +3,9 @@
     <n> Recycling Collection </n>
     <Image> Truck.png </Image>
 
-    <Cost> 50 </Cost>
+    <Cost> 200 </Cost>
 
-    <Base_Damage> 40 </Base_Damage>
+    <Base_Damage> 25 </Base_Damage>
     <Base_Fire_Rate> 0.5 </Base_Fire_Rate>
     <Base_Projectile_Speed> 10 </Base_Projectile_Speed>
     <Range> 8 </Range>

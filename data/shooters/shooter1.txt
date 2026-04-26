@@ -7,7 +7,7 @@
 
     <Base_Damage> 4 </Base_Damage>
     <Base_Fire_Rate> 2 </Base_Fire_Rate>
-    <Base_Projectile_Speed> 10 </Base_Projectile_Speed>
+    <Base_Projectile_Speed> 7 </Base_Projectile_Speed>
     <Range> 3 </Range>
 
     <Upgrade_Costs>

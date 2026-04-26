@@ -5,9 +5,9 @@
 
     <Cost> 125 </Cost>
 
-    <Base_Damage> 20 </Base_Damage>
+    <Base_Damage> 12 </Base_Damage>
     <Base_Fire_Rate> 1 </Base_Fire_Rate>
-    <Base_Projectile_Speed> 10 </Base_Projectile_Speed>
+    <Base_Projectile_Speed> 15 </Base_Projectile_Speed>
     <Range> 4 </Range>
 
     <Upgrade_Costs>
