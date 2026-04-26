@@ -5,7 +5,7 @@
 // ─────────────────────────────────────────────
 const COLS       = 24;
 const ROWS       = 16;
-const RIVER_COLS = 2;
+const RIVER_COLS = 3;
 const CELL       = 40;
 
 const TILE  = { GRASS: 0, PATH: 1, RIVER: 2, BASE: 3 };
@@ -154,17 +154,17 @@ function buildMap() {
     [3,  3],
     [7,  3],
     [7,  8],
-    [3,  8],
-    [3,  12],
+    [5,  8],
+    [5,  12],
     [10, 12],
     [10, 6],
     [16, 6],
     [16, 11],
     [20, 11],
-    [20, 4],
-    [COLS - RIVER_COLS - 1, 4],
-    [COLS - RIVER_COLS - 1, baseRow],
-    [COLS - RIVER_COLS,     baseRow],
+    // [20, 4],
+    //[COLS - RIVER_COLS - 1, 4],
+    //[COLS - RIVER_COLS - 1, baseRow],
+    //[COLS - RIVER_COLS,     baseRow],
   ];
 
   for (let i = 0; i < waypoints.length - 1; i++) {
