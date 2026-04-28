@@ -61,6 +61,7 @@ function parseShooterDef(text) {
     image:               tag(doc, 'Image'),
     projectileImage:     tag(doc, 'Projectile_Image'),
     cost:                tagInt(doc, 'Cost'),
+    maxHealth: tagInt(doc, 'Max_Health'),
     baseDamage:          tagNum(doc, 'Base_Damage'),
     baseFireRate:        tagNum(doc, 'Base_Fire_Rate'),
     baseProjectileSpeed: tagNum(doc, 'Base_Projectile_Speed'),
@@ -262,7 +263,7 @@ function placeTower(def, row, col) {
     img: def.image ? loadImg(`assets/${def.type}s/${def.image}`) : null,
     projectileImg: def.projectileImage ? loadImg(`assets/projectiles/${def.projectileImage}`) : null,
     maxHealth: def.maxHealth,
-    currentHealth: def.Maxhealth,
+    currentHealth: def.maxhealth,
   };
   computeTowerStats(tower);
   G.placedTowers.push(tower);
@@ -788,6 +789,7 @@ function drawTower(t, cs) {
     ctx.textAlign = 'right'; ctx.textBaseline = 'bottom';
     ctx.fillText(`L${t.level}`, x + cs - 2, y + cs - 1);
   }
+
   if (t.maxHealth > 0) {
     const frac = Math.max(0, t.currentHealth / t.maxHealth);
 

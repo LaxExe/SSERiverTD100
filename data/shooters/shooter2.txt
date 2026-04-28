@@ -30,6 +30,9 @@
         <Level_4> 2.5 </Level_4>
     </Level_Multipliers>
 
+    <Max_Health> 100 </Max_Health>
+    <Health_Cost_Per_Shot> 5 </Health_Cost_Per_Shot>
+
     <Projectile_Hit_Radius> 8 </Projectile_Hit_Radius>
     <Projectile_Image> net.png </Projectile_Image>
 
