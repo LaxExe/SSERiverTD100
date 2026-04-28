@@ -261,6 +261,8 @@ function placeTower(def, row, col) {
     cooldown: 0,
     img: def.image ? loadImg(`assets/${def.type}s/${def.image}`) : null,
     projectileImg: def.projectileImage ? loadImg(`assets/projectiles/${def.projectileImage}`) : null,
+    maxHealth: def.maxHealth,
+    currentHealth: def.Maxhealth,
   };
   computeTowerStats(tower);
   G.placedTowers.push(tower);
@@ -380,6 +382,7 @@ function updateShooters(dt) {
     if (tower.def.type !== 'shooter') continue;
     tower.cooldown -= dt;
     if (tower.cooldown > 0 || G.enemies.length === 0) continue;
+    if (tower.def.maxHealth > 0 && tower.currentHealth <= 0) continue;
 
     const rangeBase = tower.range * CELL;
     const inRange = G.enemies
@@ -415,6 +418,11 @@ function updateShooters(dt) {
       img:         tower.projectileImg,
       dead:        false,
     });
+
+    if (tower.def.healthCostPerShot > 0) {
+      tower.currentHealth -= tower.def.healthCostPerShot;
+      if (tower.currentHealth < 0) tower.currentHealth = 0;
+    }
   }
 }
 
@@ -780,7 +788,24 @@ function drawTower(t, cs) {
     ctx.textAlign = 'right'; ctx.textBaseline = 'bottom';
     ctx.fillText(`L${t.level}`, x + cs - 2, y + cs - 1);
   }
+  if (t.maxHealth > 0) {
+    const frac = Math.max(0, t.currentHealth / t.maxHealth);
 
+    const bw = t.def.hpBarWidth * (cs / CELL);
+    const bh = Math.max(2, t.def.hpBarHeight * (cs / CELL));
+
+    const sx = x + cs / 2;
+
+    ctx.fillStyle = 'rgba(0,0,0,0.25)';
+    ctx.fillRect(sx - bw/2, y - bh - 2, bw, bh);
+
+    ctx.fillStyle =
+      frac > 0.6 ? '#468432' :
+      frac > 0.3 ? '#FFA02E' :
+                   '#e03030';
+
+    ctx.fillRect(sx - bw/2, y - bh - 2, bw * frac, bh);
+}
   // Selection ring
   if (G.selectedTower === t) {
     ctx.strokeStyle = '#468432'; ctx.lineWidth = 2.5;

@@ -33,6 +33,12 @@
     <Projectile_Hit_Radius> 8 </Projectile_Hit_Radius>
     <Projectile_Image> gloves.png </Projectile_Image> 
 
+    <Max_Health>100</Max_Health>
+    <Health_Cost_Per_Shot>5</Health_Cost_Per_Shot>
+
+    <Health_Bar_Width>30</Health_Bar_Width>
+    <Health_Bar_Height>4</Health_Bar_Height>
+
     <Description> there needs to be a description for why this technology or thing protects the environment</Description>
 
 </Shooter>
