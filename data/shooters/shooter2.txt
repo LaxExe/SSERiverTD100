@@ -3,7 +3,7 @@
     <n> Drone Pickup </n>
     <Image> drone.png </Image>
 
-    <Cost> 125 </Cost>
+    <Cost> 75 </Cost>
 
     <Base_Damage> 12 </Base_Damage>
     <Base_Fire_Rate> 1 </Base_Fire_Rate>
@@ -30,11 +30,13 @@
         <Level_4> 2.5 </Level_4>
     </Level_Multipliers>
 
-    <Max_Health> 100 </Max_Health>
-    <Health_Cost_Per_Shot> 5 </Health_Cost_Per_Shot>
+    <Max_Health> 128 </Max_Health>
+    <Health_Cost_Per_Shot> 8 </Health_Cost_Per_Shot>
 
     <Health_Bar_Width>30</Health_Bar_Width>
     <Health_Bar_Height>4</Health_Bar_Height>
+
+    <Healing_Cost> 150 </Healing_Cost>
 
     <Projectile_Hit_Radius> 8 </Projectile_Hit_Radius>
     <Projectile_Image> net.png </Projectile_Image>

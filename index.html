@@ -390,13 +390,24 @@
 
   #sp-upgrade-btn {
     font-family: 'Fredoka One', cursive; font-size: 13px; letter-spacing: 1px;
-    color: var(--white); background: linear-gradient(135deg, var(--green-dark), #357026);
+    color: var(--white); background: linear-gradient(135deg, #357026);
     border: none; border-radius: 14px; padding: 8px 0; cursor: pointer;
     box-shadow: 0 2px 0 #2a5a1e, 0 4px 10px var(--shadow);
     transition: all .12s; margin-top: 2px;
   }
+
+  #sp-heal-btn { 
+    font-family: 'Fredoka One', cursive; font-size: 13px; letter-spacing: 1px;
+    color: var(--white); background: linear-gradient(135deg, #702632);
+    border: none; border-radius: 14px; padding: 8px 0; cursor: pointer;
+    box-shadow: 0 2px 0 #5a1e30, 0 4px 10px var(--shadow);
+    transition: all .12s; margin-top: 2px;
+  }
   #sp-upgrade-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 4px 0 #2a5a1e, 0 8px 18px var(--shadow); }
   #sp-upgrade-btn:disabled { opacity: .35; cursor: not-allowed; transform: none; box-shadow: none; }
+  
+  #sp-heal-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 4px 0 #2a5a1e, 0 8px 18px var(--shadow); }
+  #sp-heal-btn:disabled { opacity: .35; cursor: not-allowed; transform: none; box-shadow: none; }
 
   /* ── LOADING ── */
   #loading-screen {
@@ -499,6 +510,7 @@
       <div id="sp-divider"></div>
       <div id="sp-stats"></div>
       <button id="sp-upgrade-btn">Upgrade</button>
+      <button id="sp-heal-btn">Heal</button>
     </div>
 
     <div id="overlay">

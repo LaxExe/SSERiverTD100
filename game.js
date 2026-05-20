@@ -65,6 +65,7 @@ function parseShooterDef(text) {
     hpBarWidth:          tagInt(doc, 'Health_Bar_Width') || 0,
     hpBarHeight:         tagInt(doc, 'Health_Bar_Height') || 0,
     healthCostPerShot:   tagNum(doc, 'Health_Cost_Per_Shot') || 0,
+    healingCost:         tagInt(doc, 'Healing_Cost') || 0,
     baseDamage:          tagNum(doc, 'Base_Damage'),
     baseFireRate:        tagNum(doc, 'Base_Fire_Rate'),
     baseProjectileSpeed: tagNum(doc, 'Base_Projectile_Speed'),
@@ -223,7 +224,7 @@ function initGame() {
     grid, waypoints: pixWP, segLengths, totalPathLen: totalLen, baseRow,
     riverMaxHP:      Registry.river.maxHealth,
     riverHP:         Registry.river.maxHealth,
-    bank:            100,
+    bank:            500,
     waveIndex:      -1,
     enemiesDefeated: 0,
     enemies:         [],
@@ -1033,6 +1034,30 @@ function refreshInfoPanel() {
     btn.textContent = `Upgrade  $${cost}`;
     btn.disabled    = G.bank < cost;
   }
+
+  // ── Heal button ──
+  const healBtn = document.getElementById('sp-heal-btn');
+  if (
+    tower.preview ||
+    tower.def.type !== 'shooter' ||
+    tower.maxHealth <= 0
+  ) {
+    healBtn.style.display = 'none';
+  }
+  else {
+    healBtn.style.display = '';
+    if (tower.currentHealth >= tower.maxHealth) {
+      healBtn.textContent = 'FULL HEALTH';
+      healBtn.disabled = true;
+    }
+    else {
+      healBtn.textContent =
+        `Heal Full HP ($${def.healingCost})`;
+
+      healBtn.disabled =
+        G.bank < def.healingCost;
+    }
+  }
 }
 
 document.getElementById('sp-upgrade-btn').addEventListener('click', () => {
@@ -1057,6 +1082,18 @@ document.getElementById('btn-upgrade').addEventListener('click', () => {
 });
 
 document.getElementById('btn-close-info').addEventListener('click', () => { closeInfoPanel(); canvas.style.cursor = 'default'; });
+
+document.getElementById('sp-heal-btn').addEventListener('click', () => {
+
+  const t = G.selectedTower;
+  if (!t) return;
+  if (t.currentHealth >= t.maxHealth) return;
+  const cost = t.def.healingCost || 0;
+  if (G.bank < cost) return;
+  G.bank -= cost;
+  t.currentHealth = t.maxHealth;
+  updateUI();
+});
 
 // ─────────────────────────────────────────────
 //  CANVAS INPUT
